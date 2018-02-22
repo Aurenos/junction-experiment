@@ -54,11 +54,6 @@ class StrengthUpAbility(PassiveAbility):
         unit.attr_adjustments = [adj for adj in unit.attr_adjustments if adj.source != self._id]
 
 
-class Unit(CombatUnit):
-    def __init__(self, name: str, max_health: int):
-        super(__class__, self).__init__(name, max_health)
-
-
 if __name__ == '__main__':
     unit1 = CombatUnit('Arthur', 20)
     unit2 = CombatUnit('Zora', 20)
